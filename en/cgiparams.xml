@@ -4686,6 +4686,8 @@
 #define HOST_ACTIVE_CHECK               131072
 #define HOST_HARD_STATE                 262144
 #define HOST_SOFT_STATE                 524288
+#define HOST_STATE_HANDLED              1048576   (since v1.7)
+#define HOST_NOT_ALL_CHECKS_DISABLED    2097152   (since v1.7)
 
 #define SERVICE_SCHEDULED_DOWNTIME      1
 #define SERVICE_NO_SCHEDULED_DOWNTIME   2
@@ -4706,7 +4708,9 @@
 #define SERVICE_PASSIVE_CHECK           65536
 #define SERVICE_ACTIVE_CHECK            131072
 #define SERVICE_HARD_STATE              262144
-#define SERVICE_SOFT_STATE              524288</programlisting>
+#define SERVICE_SOFT_STATE              524288
+#define SERVICE_STATE_HANDLED           1048576   (since v1.7)
+#define SERVICE_NOT_ALL_CHECKS_DISABLED 2097152   (since v1.7)</programlisting>
 
   <para><anchor xml:id="cgiparams-statustypes"/><emphasis role="bold">Excerpt from include/statusdata.h</emphasis></para>
 
